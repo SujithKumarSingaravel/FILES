@@ -1,0 +1,31 @@
+tree
+sudo apt update
+
+systemctl status jenkins -> active status
+
+
+sudo apt update
+  273  java -version
+  274  sudo apt install -y openjdk-11-jdk
+  275  sudo apt install -y maven
+  276  apt remove tree
+  277  sudo apt remove tree
+  278  trr
+  279  tree
+  280  sudo apt install -y  tree
+  281  tree
+  282  git clone cd 
+  283  cd hello-world-maven/
+  284  ls
+  285  mvn compile
+  286  ls
+  287  tree target
+  288  mvn package
+  289  ls
+  290  tree target
+  291  history
+
+
+systemctl start httpd
+systemctl 
+free -h -> to see size

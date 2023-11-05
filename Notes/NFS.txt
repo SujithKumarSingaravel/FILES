@@ -1,0 +1,5 @@
+create 3 instances of same security grp
+
+create file system for that grp
+add security grp also as nfs - a,b,c of same security grp
+attach -> mount via ip and get ip address link

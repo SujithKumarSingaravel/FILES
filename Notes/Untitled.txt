@@ -1,0 +1,71 @@
+Template:
+deploy 1000 servers after 4 months a server crashed emi hardware forget you can make a template it remembers everything 
+Image:
+To backup 
+
+fibre wiser:
+type1
+type2
+
+Authentication:
+no passwd authentication is used in prod for critical servers. keybase authentication is used username IP are required (OTP)
+ssh - secure share - work on port no 22
+similar is used in windows - rdp (remote desktop protocol) - 3389
+
+port 
+65535 ports
+
+Azure - Both key and pwd based
+GCP & AWS - key based
+
+install linux partitions creation
+soft and hard tree set
+git and github
+core of linux - kernel
+git rebase
+git init 
+git init --bn
+
+ant plug
+build timeout
+email extension
+github branch source
+gradle plug
+javamail api
+ldap plug
+matrix autho
+maven inte
+pam 
+pipeline
+p mvn
+pipelinesu
+stageview
+github groovy
+ssh
+
+storage:
+tracks-sectors-blocks
+harddisk-plater
+ssd-no plater-like a single chip
+windows-30gb redhat
+
+Attach volume
+attach 
+filesystem -> mkfs.ext4 /dev/xvdf
+mount-> mkdir /data
+        mount /dev/xvdf /data/
+
+entend size of volume:
+modify
+growpartition
+mkfs
+to reduce size:
+create new vol
+attach to same inst
+copy from exis vol
+delete exis vol
+
+snapshots:(copy the volumes)
+bw platforms
+bw zones
+bw accounts through account id

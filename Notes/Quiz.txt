@@ -1,0 +1,20 @@
+
+14/10/2023
+Jenkins(link)-http://vmubuntu.eastus2.cloudapp.azure.com:8080/
+
+there are 1000 files in computer. Now few files are having word learn with devops. how to search- (content) -> grep
+search a file with specifc name -(file)-> find
+create 100 users at a time-> script can be craeted and loop is used
+In a long file top 10 lines -> head -n 10
+In nested folder of 1000 files, approach to send that bulk file to somebody through mail or something -> tar
+how to understand that proper way to command in linux terminal - man page or help
+for a developer or for a dev company most available digital asset - source code
+what is the prime responsibility of production person - Maintaining reliablity among customers
+In java project, tool used to build -> Maven
+In which scenario we use eclipse over maven-> when automatic deployment and building are required. manual
+what tool is used to integrate github + maven -> Jenkins
+Is Jenkins support other than java -> Yes (There is a diverse set of prog lang used in Jenkins, include Java, JavaScript, Groovy, Golang, Ruby, Shell scripts etc. Jenkins is an automation server with hundreds of plugins, there is a huge number of technologies involved)
+
+**/*.jar - means that can be in any directory
+
+POM is an acronym for Project Object Model. The pom. xml file contains information of project and configuration information for the maven to build the project such as dependencies, build directory, source directory, test source directory, plugin, goals etc.

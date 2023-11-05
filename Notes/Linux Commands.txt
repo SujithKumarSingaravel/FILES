@@ -1,0 +1,9 @@
+awk '/(search ele)/ {print $1,$2}' file.txt
+$ awk '{print NR,$0}' employee.txt
+NR -> display line no
+NF -> print last field
+$ awk 'NR==3, NR==6 {print NR,$0}' employee.txt -> from line 3 to 6
+
+
+Linux is a kernel - linus torvals
+

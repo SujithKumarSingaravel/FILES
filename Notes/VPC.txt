@@ -1,0 +1,50 @@
+Create VPC (10.0.0.0/16)
+create public subnets (10.0.0.0/24)
+create instance for respective subnet (enable)
+security grp
+http, ssh
+
+internet gateway
+attach to VPC
+
+route table
+add subnet & associate public in explicit
+
+Create VPC (20.0.0.0/16)
+create public subnets (20.0.0.0/24)
+create instance for respective subnet (enable)
+security grp
+http, ssh
+
+internet gateway
+attach to VPC
+
+route table
+add subnet & associate public in explicit
+
+peering connection
+copy and paste vpi id of sing in mum
+create request from mum
+
+accept request from sing
+
+come to same route tables and add respective destination CIDR along with existing IGW
+
+ssh
+sudo su -
+yum install httpd -y
+
+systemctl restart sshd
+systemctl enable sshd
+
+vim /etc/ssh/sshd_config
+permitrootlogin yes
+passwordAuthentication no->yes
+
+systemctl restart sshd
+systemctl enable sshd
+
+scp file.txt root@(other's ip address):/created folder
+
+
+

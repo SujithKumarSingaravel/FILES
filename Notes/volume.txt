@@ -1,0 +1,12 @@
+instance creation + base vol also be created
+create new vol
+df -h
+lsblk
+attach vol to instance of same zone
+make file system -> mkfs.ext4 /dev/xvdf (gives) data
+make directory -> mkdir /data
+mounting -> mount /dev/xvdf /data
+df -h
+expand vol size
+update resize -> resize2fs /dev/xvdf
+df -h

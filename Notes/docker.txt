@@ -1,0 +1,62 @@
+All traffic security grp for global reach
+-----------------
+rpmquery docker
+yum install docker
+rpmquery podman (if podman is there, yum remove podman)
+yum install -y yum-utils
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum repolist all
+yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+rpmquery docker-ce (or) docker --version
+systemctl status docker
+systemctl start docker 
+systemctl enable docker
+docker info
+--------------------
+ docker pull httpd
+ docker pull ubuntu:latest
+ docker images
+ docker ps -a
+docker run -it --name web-one ubuntu:latest /bin/bash -> attach mode
+
+ docker ps -a
+ docker start 03eade3b64cd -> not necessary
+ docker attach 03eade3b64cd
+
+(Inside container)
+apt-get update
+apt install apache2
+cd var/www/html
+echo "content" > index.html
+ls
+cat index.html
+cd
+service apache2 start
+
+ctrl+p ctrl+q (to come out of the container)
+docker inspect (dockername/id)
+curl http://(apache ip)
+---------------
+
+docker run -itd --name web-one ubuntu:latest /bin/bash -> detach mode
+docker exec -it (containername) /bin/bash -> instead of attach
+---
+---
+exit -> inspect -> curl
+----------------------------------
+docker run -it --name web1 -p 8080:80 ubuntu:latest /bin/bash
+---
+---
+-------------------------
+
+docker volume create myvol
+docker inspect (volname)
+docker run -it --name dev-server -v myvol:/tmp ubuntu:latest /bin/bash/
+df -h
+cd /tmp/
+touch test.txt{1..10}
+ls
+ctrl+p ctrl+q
+cd /var/lib/docker/volumes/myvol/_data
+cd
+docker ps -a

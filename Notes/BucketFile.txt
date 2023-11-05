@@ -1,0 +1,1 @@
+An Object is added into the bucket!

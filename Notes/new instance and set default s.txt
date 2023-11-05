@@ -1,0 +1,9 @@
+new instance and set default s
+note pad change
+role
+cloud formation->stack->upload file
+
+
+
+user
+bucket

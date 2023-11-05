@@ -1,0 +1,37 @@
+Error: Failed to push some refs to main
+reason1: unrelated histories 
+sol: git pull origin main --allow-unrelated-histories
+reason2: merge conflicts 
+sol: both local and remote files should be same
+
+git remote -v or git remote --verbose -> show current remote url after name
+git remote set-url origin (link) -> to switch origin or repo
+
+touch file.txt -> to create new file
+git init -> to create empty local repository
+git add file.txt -> staging
+git commit -m "Initial change" -> move to local repo
+git branch -M main -> master to main
+git checkout branchname -> to switch branches
+git branch -a -> show available branches (empty bran also)
+git remote add origin (url-repository link) -> to add new origin or repo
+git push -u origin main -> to push to remote repo
+
+Merge:
+git merge (branchname) -> to merge two branches   
+
+git branch (newbranch) -> to create new branch from terminal
+1.create new file 2.push it to newbranch -> then only it will show in github
+to merge newbranch with main -> give pull request + boss will review and merge
+
+git clone (repo link)
+cloned repo turns into origin automatically
+
+delete bran:
+git branch -d (branchname)
+git branch
+make sure that on a diff bran when delete a bran
+
+git push  
+
+git remote show origin -> show history abt remote 

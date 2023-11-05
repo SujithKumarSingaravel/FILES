@@ -1,0 +1,6 @@
+Ansible automate repetitive tasks and configure multiple servers at a time using playbook and hostfile or inventory file through SSH
+Playbooks - YAML - similar to XML, JSON
+Multiple plays in a playbook; Multiple tasks in a play
+
+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
+

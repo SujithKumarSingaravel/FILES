@@ -1,0 +1,64 @@
+
+create instances of different zones a,b,c
+advanced options-add html contents
+
+#!/bin/bash
+yum install httpd -y
+echo "content" >> /var/www/html/index.html
+systemctl start httpd
+systemctl enable httpd
+useradd sujith -p redhat -c "sujith"
+
+target grp 
+load balancer of relevent zones
+copy dns link from load balancer and paste in google
+if refresh two pages will be seen alternatively
+
+stop instance 
+actions-image-create
+ami catalog
+remove instance
+auto scaling launch
+terminate original instance
+it will auto generate replica of that instance
+
+image - pendrive
+template - make replicas
+snapchat - share across locations, zones
+
+Create VPC (10.0.0.0/16)
+create 2 subnets (public & private) (10.0.0.0/24) & (10.0.1.0/24)
+create instances for respective subnets (enable/disable)
+set same security grp
+http, ssh, all ICMP 
+
+internet gateway
+attach to VPC
+
+route table
+target: add IGW-0.0.0.0
+add 2 subnets & associate public in explicit
+
+NAT (public)
+route table
+target: add NAT-0.0.0.0
+subnet association: add 2 subnets & associate private
+
+public ssh
+
+yum install httpd -y
+ip a s
+ll -> total 0
+
+ping google.com
+ping private ip
+vi key.pem
+copy key content from downloads and paste on script file
+chmod 400 key.pem
+ssh private 
+dig google.com
+ping google.com
+
+
+
+

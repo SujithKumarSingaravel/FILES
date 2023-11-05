@@ -1,0 +1,70 @@
+
+
+Node1,2&3:
+ssh labuser@34.100.141.32
+yes
+passwd
+sudo su -
+cat /etc/os-release
+ping google.com
+hostamectl
+hostnamectl set-hostname node1.example.com
+bash
+-------
+Node1 only:
+vim /etc/hosts
+ssh-keygen
+enter four times
+l.
+cd .ssh/
+ls
+ll
+-----------
+Node2 & Node3
+passwd root
+vim /etc/ssh/sshd_config (rootlogin->yes)
+systemctl restart sshd
+systemctl enable sshd
+--------------------
+Node1:
+(from .ssh/)
+ssh-copy-id root@node2
+ssh-copy-id root@node3
+(cd ..)
+yum install ansible
+yum install ansible-core*
+ansible --version 
+vim (config file in version) -> go to github link -> copy content and paste in config file
+cd /etc/ansible
+ls (ansible.cfg, hosts, roles)
+--------------
+vim hosts
+#add below 
+[us-server]
+node2
+[india-server]
+node3
+---------
+yum install httpd
+rpmquery httpd
+cd /etc/httpd/conf
+cp httpd.conf /etc/ansible/
+cd ..
+---------
+cd /etc/ansible/
+ls
+echo "this is my server" > index.html
+vim httpd.conf (this is my custom file)
+
+ls (ansible.cfg, hosts, roles, httpd.conf, index)
+vim firstplaybook.yml
+ansible-playbook firstplaybook.yml --syntax-check
+ansible-playbook firstplaybook.yml -C
+ansible-playbook firstplaybook.yml 
+
+
+------------------------------------------------------------
+apt-get update
+apt-get install ansible-core*
+
+
